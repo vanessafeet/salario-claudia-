@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resumen de Pagos - Majito</title>
+ <style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    color: #333;
+    background-image: url('https://wallpapershome.com/images/pages/ico_h/5708.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  .foto-circular {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+    margin-bottom: 20px;
+  }
+
+  h1, h2 {
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+  }
+
+  .responsabilidad {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-left: 5px solid #2196f3;
+    margin-bottom: 20px;
+    border-radius: 6px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 20px;
+    table-layout: fixed;
+    word-wrap: break-word;
+  }
+
+  th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+  th {
+    background-color: #2196f3;
+    color: white;
+  }
+
+  .total {
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+
+  #graficoContainer {
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  /* --- Responsive CSS --- */
+  @media (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+
+    .foto-circular {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 1.5em;
+    }
+
+    h2 {
+      font-size: 1.3em;
+    }
+
+    .responsabilidad {
+      padding: 10px;
+      font-size: 0.9em;
+    }
+
+    th, td {
+      padding: 8px;
+      font-size: 0.9em;
+    }
+
+    .total {
+      font-size: 16px;
+    }
+
+    #graficoContainer {
+      padding: 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .foto-circular {
+      width: 100px;
+      height: 100px;
+    }
+
+    h1 {
+      font-size: 1.2em;
+    }
+
+    h2 {
+      font-size: 1.1em;
+    }
+
+    th, td {
+      font-size: 0.8em;
+      padding: 6px;
+    }
+
+    .total {
+      font-size: 14px;
+    }
+
+    #graficoContainer {
+      padding: 10px;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+  <h1>Reclutadora: Claudia Vanegas </h1>
+  <img src="https://scontent.fpty1-1.fna.fbcdn.net/v/t39.30808-1/505867577_3915777058737838_3565653555302906346_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeE5SOYObBJkwSWLR06tpRQ5-eFaDrvD6Pb54VoOu8Po9hZwVZrXVIjxT1Q9xpVxdtXQKDq3gTPr7XQkXIzU1OFF&_nc_ohc=DLba7j4J4ZwQ7kNvwHQR-C5&_nc_oc=Adl5pinM3mB-ljivaR0w6yRryn1ul_neAeqnBl3u2Lh5HpO0TEoyRMAI7RN8yBWo4ZI&_nc_zt=24&_nc_ht=scontent.fpty1-1.fna&_nc_gid=QWVNhD1mbte2RKYeoHosMA&oh=00_AfUJVqUd-a-DlkG6lz7uDbrw8eK-gaHVl8bC7pnKbtvPhA&oe=68B88401" alt="Foto de Majito" class="foto-circular" />
+
+  <div class="responsabilidad">
+    <p>Majito es la encargada de supervisar a las vendedoras extranjeras en caso de que enfrenten problemas con los clientes.</p>
+    <p>Además, debe recibir un pago mensual por su labor como jefa recolectora y consejera de las vendedoras sordas verificadas.</p>
+  </div>
+
+  <h2>Ganancias del Mes</h2>
+  <table id="tablaPagos">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Monto Enviado</th>
+        <th>Fecha</th>
+        <th>Estado</th>
+        <th>¿Enviado?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Andrea</td><td>$20</td><td>30 de Agosto de 2025</td><td>Inactiva</td><td>✅</td></tr>
+      <tr><td>Mike</td><td>$40</td><td>30 de Agosto de 2025</td><td>Activo</td><td>✅</td></tr>
+      <tr><td>Keyla</td><td>$20</td><td>30 de Agosto de 2025</td><td>Activa</td><td>✅</td></tr>
+      <tr><td>Anit Josseline</td><td>$20</td><td>30 de Agosto de 2025</td><td>Inactiva</td><td>✅</td></tr>
+      <tr><td>Ana Bellen</td><td>$20</td><td>30 de Agosto de 2025</td><td>Activa</td><td>✅</td></tr>
+    
+    </tbody>
+  </table>
+
+  <div class="total" id="total">Total recibido: $0</div>
+
+  <div id="graficoContainer">
+    <canvas id="graficoPagos"></canvas>
+  </div>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Plugin para mostrar etiquetas dentro del gráfico -->
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+  <script>
+    const tabla = document.getElementById('tablaPagos').getElementsByTagName('tbody')[0];
+    let total = 0;
+    const nombres = [];
+    const montos = [];
+
+    for (let fila of tabla.rows) {
+      const nombre = fila.cells[0].innerText;
+      const montoStr = fila.cells[1].innerText.replace('$', '');
+      const monto = parseFloat(montoStr);
+
+      nombres.push(nombre);
+      montos.push(monto);
+      total += monto;
+    }
+
+    document.getElementById('total').innerText = `Total recibido: $${total}`;
+
+    const ctx = document.getElementById('graficoPagos').getContext('2d');
+    const colores = [
+      '#2196f3','#e91e63','#ff9800','#4caf50','#9c27b0','#00bcd4','#f44336'
+    ];
+
+    const grafico = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: nombres,
+        datasets: [{
+          label: 'Monto Enviado',
+          data: montos,
+          backgroundColor: colores,
+          borderColor: '#fff',
+          borderWidth: 2,
+          hoverOffset: 30
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'bottom',
+            labels: {
+              font: {
+                size: 14,
+                weight: 'bold'
+              },
+              color: '#333'
+            }
+          },
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                return `${context.label}: $${context.parsed}`;
+              }
+            }
+          },
+          datalabels: {
+            color: 'white',
+            font: {
+              weight: 'bold',
+              size: 14
+            },
+            formatter: function(value, context) {
+              const nombre = context.chart.data.labels[context.dataIndex];
+              const monto = value;
+              return `${nombre}\n$${monto}`;
+            },
+            anchor: 'center',
+            align: 'center'
+          }
+        }
+      },
+      plugins: [ChartDataLabels]
+    });
+  </script>
+
+</body>
+</html>
